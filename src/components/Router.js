@@ -1,12 +1,14 @@
+// import { useState } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import { useState } from "react";
-import Auth from "../routes/Auth";
-import Home from "../routes/Home";
+import Auth from "D:/Project/nwitter/src/routes/Auth";
+import Home from "D:/Project/nwitter/src/routes/Home";
+// import Auth from "../routes/Auth";
+// import Home from "../routes/Home";
 
 
-const AppRouter = () =>{
+const AppRouter = ({isLoggedIn}) =>{
    // const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+   // const [isLoggedIn, setIsLoggedIn] = useState(true);
     return(
         <Router>
             <Switch>
